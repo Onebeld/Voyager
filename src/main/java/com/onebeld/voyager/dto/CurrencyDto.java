@@ -1,4 +1,4 @@
-﻿package com.onebeld.voyager.dto;
+package com.onebeld.voyager.dto;
 
 import lombok.Data;
 

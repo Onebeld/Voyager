@@ -59,6 +59,9 @@ public class Trip {
     @OneToMany(mappedBy = "trip",  cascade = CascadeType.ALL,  orphanRemoval = true)
     private Collection<Review> reviews;
 
+    @OneToMany(mappedBy = "trip", cascade = CascadeType.ALL,  orphanRemoval = true)
+    private Collection<Booking>  bookings;
+
     @OneToMany(mappedBy = "trip", cascade = CascadeType.ALL, orphanRemoval = true)
     private Collection<Image> images;
 }

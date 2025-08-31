@@ -1,4 +1,4 @@
-﻿package com.onebeld.voyager.initializers;
+package com.onebeld.voyager.initializers;
 
 import com.onebeld.voyager.entities.Position;
 import com.onebeld.voyager.repositories.PositionRepository;

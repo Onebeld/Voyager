@@ -1,4 +1,4 @@
-﻿package com.onebeld.voyager.services.interfaces;
+package com.onebeld.voyager.services.interfaces;
 
 import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;

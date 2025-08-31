@@ -1,4 +1,4 @@
-﻿package com.onebeld.voyager.repositories;
+package com.onebeld.voyager.repositories;
 
 import com.onebeld.voyager.entities.Image;
 import com.onebeld.voyager.entities.Trip;

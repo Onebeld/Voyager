@@ -6,7 +6,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.io.Serializable;
-import java.time.Timestamp;
+import java.sql.Timestamp;
 import java.util.Collection;
 import java.util.stream.Collectors;
 

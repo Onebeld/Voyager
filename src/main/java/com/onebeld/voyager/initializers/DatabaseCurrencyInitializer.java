@@ -1,4 +1,4 @@
-﻿package com.onebeld.voyager.initializers;
+package com.onebeld.voyager.initializers;
 
 import com.onebeld.voyager.repositories.CurrencyRepository;
 import com.onebeld.voyager.services.interfaces.CurrencyService;

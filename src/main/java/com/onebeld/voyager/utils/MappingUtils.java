@@ -1,4 +1,4 @@
-﻿package com.onebeld.voyager.utils;
+package com.onebeld.voyager.utils;
 
 import com.onebeld.voyager.dto.trips.TripLocationDto;
 import com.onebeld.voyager.dto.trips.TripShortInfoDto;

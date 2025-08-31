@@ -1,4 +1,4 @@
-﻿package com.onebeld.voyager.schedulers;
+package com.onebeld.voyager.schedulers;
 
 import com.onebeld.voyager.services.interfaces.CurrencyService;
 import org.springframework.scheduling.annotation.Scheduled;

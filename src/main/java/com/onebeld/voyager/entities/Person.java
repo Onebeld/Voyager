@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.awt.print.Book;
 import java.util.Collection;
 
 @Entity
@@ -18,6 +19,9 @@ public class Person {
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
+
+    @Column(name = "image_url")
+    private String imageUrl;
 
     @Column(name = "first_name")
     private String firstName;
@@ -39,4 +43,7 @@ public class Person {
 
     @OneToMany(mappedBy = "person",  cascade = CascadeType.ALL, orphanRemoval = true)
     private Collection<Review> reviews;
+
+    @OneToMany(mappedBy = "person",   cascade = CascadeType.ALL, orphanRemoval = true)
+    private Collection<Booking> bookings;
 }

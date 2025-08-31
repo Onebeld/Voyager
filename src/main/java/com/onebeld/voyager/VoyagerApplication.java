@@ -8,5 +8,4 @@ public class VoyagerApplication {
     public static void main(String[] args) {
         SpringApplication.run(VoyagerApplication.class, args);
     }
-
 }

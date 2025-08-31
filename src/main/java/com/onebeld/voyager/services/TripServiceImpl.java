@@ -1,4 +1,4 @@
-﻿package com.onebeld.voyager.services;
+package com.onebeld.voyager.services;
 
 import com.onebeld.voyager.dto.trips.TripLocationDto;
 import com.onebeld.voyager.dto.trips.TripShortInfoDto;
@@ -46,9 +46,15 @@ public class TripServiceImpl implements TripService {
         tripShortInfoDto.setPrice(price);
         tripShortInfoDto.setCurrencyCode(currencyCode);
 
-        Set<Image> images = imageRepository.findImagesByTrip(trip);
-        tripShortInfoDto.setImageUrls(images.stream().map(Image::getUrl).collect(Collectors.toSet()));
+        tripShortInfoDto.setImageUrls(getTripImages(trip));
 
         return tripShortInfoDto;
     }
+
+    private Set<String> getTripImages(Trip trip) {
+        Set<Image> images = imageRepository.findImagesByTrip(trip);
+        return images.stream().map(Image::getUrl).collect(Collectors.toSet());
+    }
+
+
 }
